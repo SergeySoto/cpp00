@@ -1,0 +1,20 @@
+#ifndef PHONEBOOK_HPP
+# define PHONEBOOK_HPP
+
+# include <string>
+# include <iostream>
+# include "Contact.hpp"
+
+class PhoneBook {
+private:
+	Contact _phoneBook[8];
+	int _index;
+	int _count;
+public:
+	PhoneBook(void);
+	~PhoneBook(void);
+	void	addContact(void);
+	void	searchContact(void) const;
+};
+
+#endif
