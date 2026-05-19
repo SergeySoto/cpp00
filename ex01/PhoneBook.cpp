@@ -28,3 +28,8 @@ void PhoneBook::addContact(void)
 	if (_count < 8)
 		++_count;
 }
+
+void PhoneBook::searchContact(void) const
+{
+	
+}

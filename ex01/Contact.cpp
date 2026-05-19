@@ -1,26 +1,26 @@
 #include "Contact.hpp"
 
-std::string	Contact::getName(void)
+std::string	Contact::getName(void) const
 {
 	return (this->_firstName);
 }
 
-std::string Contact::getLastName(void)
+std::string Contact::getLastName(void) const
 {
 	return (this->_lastName);
 }
 
-std::string Contact::getNickName(void)
+std::string Contact::getNickName(void) const
 {
 	return (this->_nickName);
 }
 
-std::string Contact::getPhoneNumber(void)
+std::string Contact::getPhoneNumber(void) const
 {
 	return (this->_phoneNumber);
 }
 
-std::string Contact::getDarkestSecret(void)
+std::string Contact::getDarkestSecret(void) const
 {
 	return (this->_darkestSecret);
 }

@@ -10,18 +10,18 @@ int	main(int argc, char **argv)
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 		return 0;
 	}
-	for (int i = 1; i < argc; ++i)
-	{
-		std::string str(argv[i]);
-		std::transform(str.begin(), str.end(), str.begin(), ::toupper);
-		std::cout << str;
-	}
-	std::cout << std::endl;
 	/*for (int i = 1; i < argc; ++i)
 	{
 		for (int j = 0; argv[i][j]; ++j)
 			std::cout << (char)toupper(argv[i][j]);
 	}
 	std::cout << std::endl;*/
+	for (int i = 1; i < argc; ++i)
+	{
+		std::string Result(argv[i]);
+		std::transform(Result.begin(), Result.end(), Result.begin(), ::toupper);
+		std::cout << Result;
+	}
+	std::cout << std::endl;
 	return 0;
 }
