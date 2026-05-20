@@ -1,5 +1,16 @@
 #include "Contact.hpp"
 
+Contact::Contact(void)
+{
+	return ;
+}
+
+Contact::~Contact(void)
+{
+	std::cout << "Destructor called for: " << this->getName() << std::endl;
+	return ;
+}
+
 std::string	Contact::getName(void) const
 {
 	return (this->_firstName);

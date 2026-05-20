@@ -4,6 +4,13 @@ PhoneBook::PhoneBook(void)
 {
 	this->_index = 0;
 	this->_count = 0;
+	return ;
+}
+
+PhoneBook::~PhoneBook(void)
+{
+	std::cout << "Destructor called on PhoneBook" << std::endl;
+	return ;
 }
 
 void PhoneBook::addContact(void)
@@ -31,5 +38,12 @@ void PhoneBook::addContact(void)
 
 void PhoneBook::searchContact(void) const
 {
-	
+	std::string str;
+	str = PhoneBook::Contact::getName();
+	for (int i = 0; i < _count; ++i)
+	{
+		str = str.substr(0, 9) + ".";
+		if (str.length() > 10)
+			std::cout << std::setw(10) << str;
+	}
 }
