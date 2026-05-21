@@ -7,7 +7,6 @@ Contact::Contact(void)
 
 Contact::~Contact(void)
 {
-	std::cout << "Destructor called for: " << this->getName() << std::endl;
 	return ;
 }
 
